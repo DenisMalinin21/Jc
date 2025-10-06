@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+body {
+    font-family: Montserrat;
+}
+.welcome-mini {
+    background-color: rgba(225, 255, 143, 1);
+    background-image: url(images/big-star.svg), url(images/star\ 4.svg), url(images/star\ 5.svg), url(images/star\ 3.svg), url(images/star\ 2.svg);
+    background-position: 856px -334px, 1014px 568px, 948px 538px, 157px 69px, 62px 93px;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding-top: 196px;
+}
+.welcome-mini__good {
+    width: 769px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 100%;
+    font-family: Montserrat;
+}
+.welcome-mini__paragraph {
+    padding-top: 24px;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.welcome-mini__move {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 49px;
+    width: 247px;
+    height: 66px;
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background-color: rgb(32, 32, 39);
+    color: white;
+    padding: 16px 28px 16px 28px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+}
+.welcome-mini__move:hover{
+    background-color: #f8f4f4;
+    color: black;
+}
+.welcom-strip {
+    background-color: rgba(188, 236, 48, 1);
+}
+.menu-strip {
+    
+}
+.heading {
+    background-color: rgb(32, 32, 39);
+    width: auto;
+    height: 1470px;
+    color: white;
+    background-image: url(images/stargame\ 12.svg), url(images/big\ stargame\ 1.svg), url(images/stargame\ 11.svg);
+    background-repeat: no-repeat;
+    background-position: 18px 824px, 951px 105px, 0px 768px;
+    padding-top: 94px;
+}
+.heading__game{
+    font-size: 64px;
+}
+.heading__poster{
+    font-size: 24px;
+    padding-top: 24px;
+}
+.block-game {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    margin-top: 59px;
+}
+.heading-link{
+    text-decoration: none;
+    display: inline-block;
+}
+.heading-link:hover {
+    transform: scale(1.1) !important;
+}
+.card-game {
+    background-color: white;
+    border-radius: 30px;
+    min-width: 378px;
+}
+.card {
+    background-image: url(images/Обложка\ карточки.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 30px;
+    min-height: 404px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 16px;
+    padding: 32px 32px 36px 32px;
+}
+.card__text {
+    border-radius: 53px;
+    background-color: rgb(247, 247, 247);
+    width: 108px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.card__head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 32px;
+}
+.card-gametwo{
+    margin-top: 11px;
+    background-color: white;
+    border-radius: 30px;
+    max-width: 378px;
+}
+.card-product {
+    background-image: url(images/arifmicetion.png);
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    padding: 32px 32px 36px 32px;
+    background-color: rgb(255, 255, 255);
+    height: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 16px;
+}
+.card__texttwo {
+    border-radius: 53px;
+    background-color: rgb(247, 247, 247);
+    width: 108px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.card__headtwo {
+   color: rgba(32, 32, 39, 1);
+   font-size: 32px;
+}
+.card-gamethree {
+    background-color: white;
+    border-radius: 30px;
+    min-width: 378px;
+}
+.card-product__three {
+    background-image: url(images/three.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 30px;
+    min-height: 404px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 16px;
+    padding: 32px 32px 36px 32px;
+}
+.card__textthree {
+    border-radius: 53px;
+    background: rgba(247, 247, 247, 1);
+    width: 108px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.card__headthree {
+    font-size: 32px;
+}
+.card-gamefour {
+    background-color: white;
+    border-radius: 30px;
+    min-width: 378px;
+}
+.card-product__four {
+    background-image: url(images/game-four.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 32px 32px 36px 32px;
+    height: 490px;
+    border-radius: 30px;
+    max-width: 314px;
+    width: 100%;
+}
+.card__textfour {
+    border-radius: 53px;
+    background: rgba(247, 247, 247, 1);
+    width: 108px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.card__headfour {
+    font-size: 32px;
+    color: #000;
+}
+.card-gamefive {
+    background-color: #faf7f7;
+    border-radius: 30px;
+    min-width: 378px;
+}
+.card-product__five{
+    background-image: url(images/game-five.png);
+    max-width: 314px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 30px;
+    min-height: 455px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 16px;
+    margin: 10px 0px;
+    padding: 32px 32px 36px 32px;
+    margin-top: 33px;
+}
+.card__textfive {
+    border-radius: 53px;
+    background: rgba(247, 247, 247, 1);
+    width: 108px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.card__headfive {
+    font-size: 32px;
+    color: #000;
+}
+.card-gamesix {
+    background-color: #faf7f7;
+    border-radius: 30px;
+    min-width: 378px;
+}
+.card-product__six {
+    background-image: url(images/game-six.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 32px 32px 36px 32px;
+    height: 490px;
+    border-radius: 30px;
+    max-width: 314px;
+    width: 100%;
+}
