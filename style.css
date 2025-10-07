@@ -10,11 +10,12 @@
 
 body {
     font-family: Montserrat;
+    scroll-behavior: smooth;
 }
 .welcome-mini {
     background-color: rgba(225, 255, 143, 1);
     background-image: url(images/big-star.svg), url(images/star\ 4.svg), url(images/star\ 5.svg), url(images/star\ 3.svg), url(images/star\ 2.svg);
-    background-position: 856px -334px, 1014px 568px, 948px 538px, 157px 69px, 62px 93px;
+    background-position: 1656px -348px, 1758px 568px, 1696px 538px, 867px 69px, 776px 93px;
     background-repeat: no-repeat;
     height: 600px;
     padding-top: 196px;
@@ -66,7 +67,7 @@ body {
     color: white;
     background-image: url(images/stargame\ 12.svg), url(images/big\ stargame\ 1.svg), url(images/stargame\ 11.svg);
     background-repeat: no-repeat;
-    background-position: 18px 824px, 951px 105px, 0px 768px;
+    background-position: 741px 825px, 1651px 52px, 702px 768px;
     padding-top: 94px;
 }
 .heading__game{
