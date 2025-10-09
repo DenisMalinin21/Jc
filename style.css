@@ -17,7 +17,7 @@ body {
     background-image: url(images/big-star.svg), url(images/star\ 4.svg), url(images/star\ 5.svg), url(images/star\ 3.svg), url(images/star\ 2.svg);
     background-position: calc(100% - -488px) -348px, calc(84% - 100px) 568px, calc(82% - 150px) 538px, 159px 69px, 71px 93px;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 500px;
     padding-top: 196px;
 }
 .welcome-mini__good {
@@ -63,6 +63,9 @@ body {
     height: 90px;
     gap: 51px;
     width: max-content;
+    text-transform: uppercase;
+    padding-left: 66px;
+
 }
 .title {
     font-size: 30px;
