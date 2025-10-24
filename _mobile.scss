@@ -1,9 +1,10 @@
 @media (max-width: 750px) {
     
     .welcome-mini {
+        padding-top: 147px;
         padding-left: 16px;
         padding-right: 16px;
-        max-height: 700px;
+        height: 530px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -39,7 +40,7 @@
         font-size: 16px;
         font-weight: 600;
         line-height: 141.69%;
-        margin-top: 20px;
+        margin-top: 16px;
     }
     
     
@@ -76,8 +77,7 @@
     line-height: 49px;
     margin-left: 16px;
     width: 250px;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    
     }
 
     .mini-game__flexbox{
@@ -89,6 +89,7 @@
 
     .mini-game__left{
         max-width: 343px;
+        height: 244px;
         display: flex;
         flex-direction: column-reverse;
     }
@@ -121,9 +122,9 @@
         display: none;
         width: 285px;
         font-size: 32px;
-    font-weight: 700;
-    line-height: 39px;
-    height: 78px;
+        font-weight: 700;
+        line-height: 39px;
+        height: 78px;
     }
 
 

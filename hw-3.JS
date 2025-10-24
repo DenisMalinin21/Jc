@@ -4,12 +4,12 @@ for (let i = 0; i < 2; i++) {
 }
 
 // 2 задание
-for (let i = 1; i < 5; i++) {
+for (let i = 1; i <= 5; i++) {
     console.log (i);
 }
 
 // 3 задание 
-for (let i = 7; i < 22; i++) {
+for (let i = 7; i <= 22; i++) {
     console.log (i);
 }
 
@@ -26,7 +26,7 @@ for(let name in obj) {
 // 5 задание
 let n = 1000;
 let num = 0;
-while (n >= 0){
+while (n > 0){
     n /= 2;
     num++;
 }
