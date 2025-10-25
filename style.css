@@ -348,7 +348,6 @@ body {
 
 .mini-game__head {
   width: 400px;
-  height: 78px;
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
@@ -566,7 +565,7 @@ body {
     font-size: 16px;
     font-weight: 600;
     line-height: 141.69%;
-    margin-top: 16px;
+    margin-top: 13px;
   }
   .menu-strip {
     display: flex;
@@ -602,11 +601,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-left: 16px;
   }
   .mini-game__left {
     max-width: 343px;
-    height: 244px;
     display: flex;
     flex-direction: column-reverse;
   }
@@ -683,7 +680,8 @@ body {
     background-color: rgb(32, 32, 39);
   }
   .mini-game {
-    min-height: 3740px;
+    min-height: 3710px;
+    padding-right: 16px;
   }
   .mini-game__mobile-head-three {
     display: block;

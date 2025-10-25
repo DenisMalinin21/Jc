@@ -26,7 +26,7 @@ for(let name in obj) {
 // 5 задание
 let n = 1000;
 let num = 0;
-while (n > 0){
+while (n > 50){
     n /= 2;
     num++;
 }
