@@ -5,7 +5,7 @@ console.log(min(8, 4));
 console.log(min(6, 6));
 
 // Задание 2
-const isEven = (n) => (n % 2 === 0) ? 'Число нечетное' : 'Число четное';
+const isEven = (n) => (n % 2 === 0) ? 'Число четное' : 'Число нечетное';
 
 console.log(isEven(5));
 console.log(isEven(4));    
@@ -36,15 +36,14 @@ age();
 
 // Задание 5  
 function calc(a, b) {
-    console.log(isNaN(a));
-    console.log(isNaN(b));
-    if (isNaN(a) || isNaN(b)) {
+    const numA = Number(a);
+    const numB = Number(b);
+    if (isNaN(numA) || isNaN(numB)) {
         return 'Одно или оба значения не являются числом';
-    } else {
-        return a * b
     }
+    return numA * numB
 }
-console.log(calc('21' , 2));
+console.log(calc('25' , 2));
 
 // Задание 6
 function getNumber() {
@@ -52,7 +51,7 @@ function getNumber() {
     if (isNaN(number)) {
         return 'Переданный параметр не является числом';
     } else {
-        return `${number} в кубе равняется ${number ** 2}`;
+        return `${number} в кубе равняется ${number ** 3}`;
     }
 }
 console.log(getNumber(15));
@@ -69,13 +68,13 @@ function getPerimetr () {
 
 const circle1 = {
     radius: 10,
-    metiodGetArea: getArea,
-    metodGetPerimetr: getPerimetr,
+    methodGetArea: getArea,
+    methodGetPerimetr: getPerimetr,
 }
 const circle2 = {
     radius: 20,
-    metiodGetArea: getArea,
-    metodGetPerimetr: getPerimetr,
+    methodGetArea: getArea,
+    methodGetPerimetr: getPerimetr,
 }
-console.log(circle1.metiodGetArea());
-console.log(circle2.metiodGetArea());
+console.log(circle1.methodGetArea());
+console.log(circle2.methodGetArea());
