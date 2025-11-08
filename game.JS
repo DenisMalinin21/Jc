@@ -32,3 +32,56 @@ function guessNumberGameButton() {
         }
     }
 }
+
+// Задание 2
+function simpleArithmetic() {
+    const operations = ['+', '-', '/', '*'];
+    let operation = operations[Math.floor(Math.random() * operations.length)];
+    let a, b, result;
+    let userAnswer;
+
+    a = Math.floor(Math.random() * 10) + 1;
+    b = Math.floor(Math.random() * 10) + 1;
+
+    switch (operation) {
+        case '+':
+            userAnswer = prompt(`Сложите ${a} и ${b}`);
+            result = a + b;
+            break;
+
+        case '-':
+            userAnswer = prompt(`Отнимите ${a} и ${b}`);
+            result = a - b;
+            break;
+
+        case '*':
+            userAnswer = prompt(`Умножьте ${a} и ${b}`);
+            result = a * b;
+            break;
+
+        case '/':
+            userAnswer = prompt(`Разделите ${a} и ${b}`);
+            result = a / b;
+            break;
+    }
+
+    
+    if (userAnswer === null) {
+        alert('Игра прервана');
+        return;
+    }
+
+   
+    userAnswer = +userAnswer;
+
+    if (userAnswer === result) {
+        alert('Это верный ответ');
+    } else {
+        alert(`Не верно! Правильный ответ ${result}`);
+    }
+}
+
+function reverseString() {
+    let text = prompt('Введите ваш текст');
+    alert(text === null ? 'Вы отменили ввод' : text.split('').reverse().join(''));
+}
