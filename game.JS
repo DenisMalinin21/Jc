@@ -50,7 +50,7 @@ function simpleArithmetic() {
             break;
 
         case '-':
-            userAnswer = prompt(`Отнимите ${a} и ${b}`);
+            userAnswer = prompt(`Вычтите ${a} и ${b}`);
             result = a - b;
             break;
 
@@ -72,7 +72,8 @@ function simpleArithmetic() {
     }
 
    
-    userAnswer = +userAnswer;
+    userAnswer = parseFloat(userAnswer.toFixed(2));
+    result = parseFloat(result.toFixed(2));
 
     if (userAnswer === result) {
         alert('Это верный ответ');
@@ -81,7 +82,3 @@ function simpleArithmetic() {
     }
 }
 
-function reverseString() {
-    let text = prompt('Введите ваш текст');
-    alert(text === null ? 'Вы отменили ввод' : text.split('').reverse().join(''));
-}

@@ -115,7 +115,7 @@ const getRanInt = (min, max) => {
     return Math.floor(Math.random() * (max-min+ 1)) + min;
 };
 const numbersArray = [];
-const arraysize = 6;
+const arraySize = 6;
 const MIN_VALUE = 1;
 const MAX_VALUE = 10;
 for (let i = 0; i < arraySize; i++) {
