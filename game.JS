@@ -60,7 +60,7 @@ function simpleArithmetic() {
             break;
 
         case '/':
-            userAnswer = prompt(`Разделите ${a} и ${b}`);
+            userAnswer = prompt(`Разделите ${a} и ${b} и округлите до двух знаков после запятой`);
             result = a / b;
             break;
     }
@@ -71,7 +71,7 @@ function simpleArithmetic() {
         return;
     }
 
-   
+    userAnswer = parseFloat(userAnswer); 
     userAnswer = parseFloat(userAnswer.toFixed(2));
     result = parseFloat(result.toFixed(2));
 
