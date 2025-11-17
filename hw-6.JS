@@ -49,9 +49,9 @@ console.log(randomArray);
 
 // Задание 7
 function twoIntegers(min, max) {
-    const randomNumber  = Math.floor(Math.random() * (max - min + 1))+ min;
     min = Math.floor(min);
     max = Math.floor(max);
+    const randomNumber  = Math.floor(Math.random() * (max - min + 1))+ min;
     console.log(`Случайное число от 1 до 10: ${randomNumber}`);
     return randomNumber;
 }
