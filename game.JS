@@ -145,3 +145,58 @@ function startQuiz() {
 
         alert(`🎉 Викторина завершена!\nПравильных ответов: ${score} из ${quiz.length}`);
     }
+
+    // Задание 5
+    const choices = ['Камень', 'Ножницы', 'Бумага'];
+
+function getComputerChoice() {
+    const randomIndex = Math.floor(Math.random() * 3);
+    return choices[randomIndex].toLowerCase(); 
+}
+
+function getUserChoice() {
+    const answer = prompt('Выберите: Камень, Ножницы или Бумага');
+    if (answer === null) {
+        return null;
+    }
+    return answer.toLowerCase();
+}
+
+function determineWinner(userChoice, computerChoice) {
+    if (userChoice === computerChoice) {
+        return 'draw';
+    }
+
+    const winConditions = {
+        'камень': 'ножницы',
+        'ножницы': 'бумага', 
+        'бумага': 'камень'
+    };
+
+    if (winConditions[userChoice] === computerChoice) {
+        return 'user';
+    } else {
+        return 'computer';
+    }
+}
+
+function rockPaperScissors() {
+    const userChoice = getUserChoice();
+    
+    
+    if (userChoice === null) {
+        alert('Игра отменена');
+        return;
+    }
+    
+    const computerChoice = getComputerChoice();
+    const result = determineWinner(userChoice, computerChoice);
+
+    if (result === 'draw') {
+        alert(`Ничья! Оба выбрали ${userChoice}`);
+    } else if (result === 'user') {
+        alert(`Вы выиграли! ${userChoice} побеждает ${computerChoice}`);
+    } else {
+        alert(`Компьютер выиграл! ${computerChoice} побеждает ${userChoice}`);
+    }
+}
