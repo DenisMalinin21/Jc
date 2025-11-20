@@ -147,19 +147,31 @@ function startQuiz() {
     }
 
     // Задание 5
-    const choices = ['Камень', 'Ножницы', 'Бумага'];
-
+const choices = ['Камень', 'Ножницы', 'Бумага'];
+const validChoices = ['камень', 'ножницы', 'бумага'];
 function getComputerChoice() {
     const randomIndex = Math.floor(Math.random() * 3);
     return choices[randomIndex].toLowerCase(); 
 }
 
 function getUserChoice() {
-    const answer = prompt('Выберите: Камень, Ножницы или Бумага');
-    if (answer === null) {
-        return null;
+    let answer;
+    let isValid = false;
+
+    while (!isValid) {
+        const promptAnswer = prompt('Выберите: Камень, Ножницы или Бумага');
+        if (promptAnswer === null) {
+            return null; 
+        }
+        answer = promptAnswer.toLowerCase();
+        if (validChoices.includes(answer)) {
+            isValid = true; 
+        } else {
+            alert('Неверный ответ! Пожалуйста, введите "камень", "ножницы" или "бумага".');
+        }
     }
-    return answer.toLowerCase();
+    
+    return answer; 
 }
 
 function determineWinner(userChoice, computerChoice) {
