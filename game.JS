@@ -212,3 +212,38 @@ function rockPaperScissors() {
         alert(`Компьютер выиграл! ${computerChoice} побеждает ${userChoice}`);
     }
 }
+const colorButton = document.getElementById('colorButton');
+    const gameSection = document.querySelector('.mini-game');
+    function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+   function getRandomHexColor() {
+    const hexChars = '0123456789ABCDEF';
+    let color = '#';
+
+    for (let i = 0; i < 6; i++) {
+        const randomIndex = getRandomNumber(0, 15);
+        color += hexChars[randomIndex];
+        
+    }
+
+        return color;
+
+   } 
+
+   function showColorInfo(hexColor) {
+        alert('Сгенерирован цвет: ' + hexColor);
+   }
+
+   function handleButtonClick() {
+    const randomColor = getRandomHexColor();
+
+    showColorInfo(randomColor);
+
+    gameSection.style.backgroundColor = randomColor;
+
+    alert('Цвет фона изменен на: ' + randomColor);
+   }
+
+   colorButton.addEventListener('click', handleButtonClick);
