@@ -59,6 +59,7 @@ body {
     background-color: rgba(188, 236, 48, 1);
     overflow: hidden;
     max-width: 100vw;
+    
 }
 .menu-strip::-webkit-scrollbar{
   display: none;
@@ -72,12 +73,11 @@ body {
     width: max-content;
     text-transform: uppercase;
     padding-left: 66px;
+    animation: menu-scroll-container 40s infinite linear;
+    animation-delay: -40s;
     
 }
-.menu-scroll-container {
-  animation: menu-scroll-container 40s infinite linear;
-  animation-delay: -40s;
-}
+
 @keyframes menu-scroll-container {
   0% {
     transform: translateX(0);

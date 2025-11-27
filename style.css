@@ -80,9 +80,6 @@ body {
   width: max-content;
   text-transform: uppercase;
   padding-left: 66px;
-}
-
-.menu-scroll-container {
   animation: menu-scroll-container 40s infinite linear;
   animation-delay: -40s;
 }
